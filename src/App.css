@@ -3,14 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 10vmin;
 }
 
 .App-header {
@@ -25,14 +18,32 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #09d3ac;
+}
+.is-done {
+  text-decoration: line-through;
+  color: red;
+}
+.sno {
+  width: 5% !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 800px) {
+  .table,
+  .task-remain {
+    width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.jumbotron {
+  background-image: url("./task.jpeg");
+  background-size: cover;
+}
+.single-task {
+  background: rgb(253, 253, 133);
+}
+.No-task-text {
+  color: grey;
+}
+.mark-complete-text {
+  font-size: 12px;
 }
