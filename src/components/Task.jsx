@@ -57,7 +57,7 @@ export class ToDoList extends Component {
         </form>
         {this.state.tasks.length > 0 ? (
           <p
-            className="bg-dark p-3 text-white w-50 m-auto"
+            className="bg-dark p-3 text-white m-auto task-remain"
             style={{ animation: animations.bounceIn }}
           >
             {this.state.tasks.length - this.state.taskDone} remaining out of{" "}
@@ -69,7 +69,7 @@ export class ToDoList extends Component {
           </p>
         )}
         <div className="text-decoration-none text-center">
-          <table border="0" className="table w-50 m-auto">
+          <table border="0" className="table m-auto">
             <tbody>
               {this.state.tasks.map((v, i) => (
                 <tr
